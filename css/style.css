@@ -1,9 +1,11 @@
-.header-text {
+.header-text 
+{
     text-shadow: 2px 2px 13px #000;
     font-size: 3rem;
 }
 
-.sc-header-main{
+.sc-header-main
+{
     border: solid 1px #fff;
     padding-top: 50px;    
     padding-bottom: 50px;
@@ -11,14 +13,33 @@
     max-width: 380px;
 }
 
-.sc-header-main p{
+.sc-header-main p
+{
     font-family: 'Poiret One', cursive;
     font-size: 44px !important;
     text-align: left;
     margin-left: 30px;
 }
 
-.sc-header-sub{    
+.sc-header-sub
+{    
     font-family: 'Abel', sans-serif;
     font-size: 23px;
+}
+
+.img-pray
+{
+    width: 100%;
+    padding-left: 50%;
+}
+
+.img-pray-inner
+{
+    color: #fff;
+    background: #212529;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 19px;
+    text-align: center;
 }
