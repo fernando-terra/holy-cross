@@ -27,12 +27,6 @@
     font-size: 23px;
 }
 
-.img-pray
-{
-    width: 100%;
-    padding-left: 50%;
-}
-
 .img-pray-inner
 {
     color: #fff;
@@ -42,4 +36,5 @@
     height: 90px;
     padding: 19px;
     text-align: center;
+    margin-left: calc(50%-45px);
 }

@@ -288,16 +288,16 @@
 
       <section id="pray">
         <div class="container">
-          <div class="img-pray">
-            <div class="img-pray-inner">
-                <i class="fa fa-3x fas fa-hand-holding-heart text-white mb-3 sr-icons"></i>
-            </div>
-          </div>
+          <div class="img-pray-inner">
+              <i class="fa fa-3x fas fa-hand-holding-heart text-white mb-3 sr-icons"></i>
+          </div>                  
           <br/>
           <div class="form-group">
-            <input class="form-control" placeholder="Nome (Opcional)"></input>
+            <input class="form-control" id="pray_name" placeholder="Nome (Opcional)"></input>
             <br/>
-            <textarea class="form-control" rows="5" id="pray" placeholder="Pedido de Oração"></textarea>
+            <input class="form-control" id="pray_city" placeholder="Cidade"></input>
+            <br/>
+            <textarea class="form-control" rows="5" id="pray_message" placeholder="Pedido de Oração"></textarea>
           </div>
           <button class="btn btn-primary" id="enviaroracao">Enviar</button>
         </div>
@@ -337,7 +337,7 @@
     <script src="js/app.js"></script>    
 
     <script>
-      $("#enviaroracao").on("click", notify);
+      $("#enviaroracao").on("click", sendMail());
     </script>
 
   </body>
