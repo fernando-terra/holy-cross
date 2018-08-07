@@ -4,16 +4,16 @@ $(document).ready(function(){
         var mail_message = $("#pray_message").val();
         var mail_city = $("#pray_city").val();
         
-        var mail_body = "Nome: " + mail_from + " | Cidade: " + mail_city + " | Mensagem: " + mail_message;
-        var payload = "body=" + mail_body;
-        
-        console.log(mail_body);
+        if(mail_from == null) { mail_from = "Anônimo"; }
+        if(mail_city == null) { mail_from = "Anônimo"; }
 
+        var mail_body = "Nome: " + mail_from + " | Cidade: " + mail_city + " | Mensagem: " + mail_message;       
+               
         $.ajax({
             type: "POST",
             url: "php/mail.php",
-            data: payload,
-            sucess: function() {
+            data: "body=" + mail_body,
+            success: function() {
                 alert("Já estamos intercedendo por você!");
             }
         });
