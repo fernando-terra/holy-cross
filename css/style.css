@@ -27,6 +27,15 @@
     font-size: 23px;
 }
 
+.sc-pray-section
+{
+    background: url('https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2015/10/08043553/top-10-worshipdevotionals-header.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    opacity: 1.0;    
+}
+
 .img-pray-inner
 {
     color: #fff;
@@ -46,6 +55,13 @@
     height: auto;
 }
 
+.img-pray 
+{
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+}
+
 .btn-menu-list
 {
     color: white;
@@ -53,4 +69,10 @@
     /* border: solid 1px #fff; */
     border-radius: 5px;
     background: #2b2b2b;
+}
+
+.card
+{
+    width: 15rem !important;
+    left: 10px;
 }
